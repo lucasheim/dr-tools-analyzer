@@ -1,0 +1,12 @@
+name: "DR Tools Analyze"
+description: "Run DR Tools check on code"
+inputs:
+  projectPath:
+    description: "Path to analyze"
+    required: true
+    default: "/src/"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.projectPath }} --analyze
