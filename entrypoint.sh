@@ -1,3 +1,3 @@
 #!/bin/bash
-
-java -jar ./drtools-code-health.jar $*
+ls
+# java -jar ./drtools-code-health.jar $*
